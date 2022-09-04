@@ -142,7 +142,7 @@
                 const image_div=document.createElement("div");
                 image_div.classList.add("col-md-4");
                 const img = document.createElement('img');
-                img.src =response[i]["img"];
+                img.src =response[i]["Img"];
                 img.classList.add("img-fluid");
                 img.classList.add("rounded-start");
                 img.classList.add("img-result");
@@ -155,7 +155,7 @@
                 heading.classList.add("card-title");
                 heading.classList.add("pt-2");
                 heading.classList.add("pb-2");
-                heading.innerText=response[i]["College Name"];
+                heading.innerText=response[i]["College_Name"];
                 body_div.append(heading)
                 const address=document.createElement("p");
                 address.innerText=response[i]["Address"];
@@ -165,13 +165,13 @@
                 const row_div=document.createElement("div");
                 row_div.classList.add("row");
                 const exam=document.createElement("p");
-                exam.innerText=response[i]["EXAM"];
+                exam.innerText=response[i]["Exam"];
                 exam.classList.add("card-text");
                 exam.classList.add("fs-5");
                 exam.classList.add("col");
                 row_div.append(exam);
                 const fee=document.createElement("p");
-                fee.innerText=response[i]["BTECH"];
+                fee.innerText=response[i]["Fee"];
                 fee.classList.add("card-text");
                 fee.classList.add("fs-5");
                 fee.classList.add("col");
